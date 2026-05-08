@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorSurface">
+
+        <ImageButton
+            android:id="@+id/btnPower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_power"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="8dp"
+            android:contentDescription="Power"/>
+
+    </androidx.appcompat.widget.Toolbar>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <ImageButton
+            android:id="@+id/btnPowerMain"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_power"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:padding="16dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tvNearest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nearest device: loading..."
+            android:textSize="24sp"
+            android:gravity="center"
+            android:paddingBottom="12dp"/>
+
+        <TextView
+            android:id="@+id/tvTags"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:fontFamily="monospace"/>
+
+        <TextView
+            android:id="@+id/tvDistance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Distance: loading..."
+            android:textSize="20sp"
+            android:gravity="center"
+            android:paddingBottom="12dp"/>
+
+        <ImageView
+            android:id="@+id/ivArrow"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="24dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_arrow"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
